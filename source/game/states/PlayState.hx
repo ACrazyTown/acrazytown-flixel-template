@@ -1,4 +1,4 @@
-package states;
+package game.states;
 
 import flixel.system.ui.FlxSoundTray;
 import flixel.FlxState;

@@ -1,8 +1,8 @@
 package;
 
-import states.Startup;
+import game.states.Startup;
 import openfl.display.FPS;
-import states.PlayState;
+import game.states.PlayState;
 import flixel.FlxState;
 import flixel.FlxGame;
 import openfl.display.Sprite;

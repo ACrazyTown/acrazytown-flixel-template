@@ -1,4 +1,4 @@
-package states;
+package game.states;
 
 import flixel.util.FlxColor;
 import flixel.FlxG;
