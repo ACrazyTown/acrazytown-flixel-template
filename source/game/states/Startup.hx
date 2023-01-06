@@ -17,6 +17,7 @@ class Startup extends FlxState
             FlxG.camera.fade(FlxColor.BLACK, 2, () -> 
             {
                 FlxG.switchState(Type.createInstance(Main.gameData.initialState, []));
+                FlxG.bitmap.clearCache();
             });
         });
         add(logo);

@@ -25,6 +25,7 @@ class BootLogo extends FlxSprite
         sound = new FlxSound().loadEmbedded('assets/sounds/template/boot${Main.SND_EXT}');
         FlxG.sound.list.add(sound);
 
+        antialiasing = true; // Always force AA, looks shitty without it
         visible = false;
     }
 
@@ -67,7 +68,7 @@ class BootLogo extends FlxSprite
 
 		animation.play("anim"); // actually play
 
-        setGraphicSize(Std.int(width / FlxG.width));
+		setGraphicSize(Std.int(width / 2 * (FlxG.width / width)));
         updateHitbox();
         screenCenter();
 
